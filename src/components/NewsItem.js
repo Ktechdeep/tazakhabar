@@ -2,16 +2,6 @@ import React, { Component } from 'react'
 
 export class NewsItem extends Component {
 
-
-    constructor () {
-        super()
-        this.state = {
-            articles: this.articles,
-            loading:false
-            
-        }
-    }
-
     render() {
        let {description , title, imageUrl, newsUrl, publishedAt, author} = this.props;  
         return (
@@ -21,7 +11,7 @@ export class NewsItem extends Component {
                         <div className="card-body">
                             <h5 className="card-title">{title}</h5>
                             <p className="card-text">{description}.</p>
-                            <a href={newsUrl} className="btn btn-sm btn-primary">Read More</a>
+                            <a rel ="noreferrer" target="_blank" href={newsUrl} className="btn btn-sm btn-dark">Read More</a>
                             <p className="card-text"><small className="text-muted">By {!author?"Unknown":author} on {new Date(publishedAt).toGMTString()}</small></p>
                         </div>
                 </div>
