@@ -11,13 +11,13 @@ export default class App extends Component {
         <Router>
           <Navbar />
           <Routes>
-            <Route exact path="/" element={<News key="general" pageSize={8} country="us" category="general" />} />
-            <Route exact path="/entertainment" element={<News key = "entertainment" pageSize={8} country="us" category="entertainment" />} />
-            <Route exact path="/business" element={<News key="business" pageSize={8} country="us" category="business" />} />
-            <Route exact path="/health" element={<News key="health" pageSize={8} country="us" category="health" />} />
-            <Route exact path="/science" element={<News key="science" pageSize={8} country="us" category="science" />} />
-            <Route exact path="/sports" element={<News  key="sports"pageSize={8} country="us" category="sports" />} />
-            <Route exact path="/technology" element={<News  key="technology"pageSize={8} country="us" category="technology" />} />
+            <Route exact path="/" element={<News key="general" apiKey="aaabd4d50e6c4703a39cc2bc54d202e5"  pageSize={8} country="us" category="general" />} />
+            <Route exact path="/entertainment" element={<News key = "entertainment" apiKey="aaabd4d50e6c4703a39cc2bc54d202e5"  pageSize={8} country="us" category="entertainment" />} />
+            <Route exact path="/business" element={<News key="business"  apiKey="aaabd4d50e6c4703a39cc2bc54d202e5" pageSize={8} country="us" category="business" />} />
+            <Route exact path="/health" element={<News key="health"  apiKey="aaabd4d50e6c4703a39cc2bc54d202e5" pageSize={8} country="us" category="health" />} />
+            <Route exact path="/science" element={<News key="science" apiKey="xaaabd4d50e6c4703a39cc2bc54d202e5yz"  pageSize={8} country="us" category="science" />} />
+            <Route exact path="/sports" element={<News  key="sports" apiKey="aaabd4d50e6c4703a39cc2bc54d202e5" pageSize={8} country="us" category="sports" />} />
+            <Route exact path="/technology" element={<News  key="technology" apiKey="aaabd4d50e6c4703a39cc2bc54d202e5" pageSize={8} country="us" category="technology" />} />
           </Routes>
         </Router>
       </div>
